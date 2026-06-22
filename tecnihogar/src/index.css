@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-gold text-ebony-deep font-heading font-semibold uppercase tracking-widest px-8 py-4 rounded transition-all duration-300 text-sm;
+  }
+  .btn-primary:hover {
+    @apply bg-gold-hover shadow-gold;
+    transform: translateY(-2px);
+  }
+
+  .btn-outline-dark {
+    @apply inline-block bg-transparent text-text-primary font-heading font-semibold uppercase tracking-widest px-8 py-4 rounded border-2 border-text-primary transition-all duration-300 text-sm;
+  }
+  .btn-outline-dark:hover {
+    @apply bg-text-primary text-white;
+  }
+
+  .btn-outline-light {
+    @apply inline-block bg-transparent text-white font-heading font-semibold uppercase tracking-widest px-8 py-4 rounded border-2 border-white transition-all duration-300 text-sm;
+  }
+  .btn-outline-light:hover {
+    @apply bg-white text-ebony-deep;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-24;
+  }
+
+  .section-padding-sm {
+    @apply py-12 md:py-16;
+  }
+
+  .container-site {
+    @apply max-w-site mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .service-card {
+    @apply bg-white rounded-lg p-8 shadow-card border-t-4 border-gold transition-all duration-300;
+  }
+  .service-card:hover {
+    @apply shadow-card-hover;
+    transform: translateY(-5px);
+  }
+
+  .section-label {
+    @apply text-gold font-heading font-semibold uppercase tracking-widest text-sm mb-3 block;
+  }
+
+  .section-title {
+    @apply font-heading font-semibold text-3xl md:text-4xl leading-tight tracking-tight;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animate-on-scroll-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .animate-on-scroll-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .animate-on-scroll-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .animate-on-scroll-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .gold-divider {
+    @apply w-16 h-1 bg-gold my-5;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .delay-500 { transition-delay: 500ms; }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Testimonial slider animation */
+@keyframes testimonialFade {
+  0% { opacity: 0; transform: translateX(20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.testimonial-active {
+  animation: testimonialFade 0.4s ease forwards;
+}
+
+/* WhatsApp pulse ring */
+@keyframes whatsappPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-pulse {
+  animation: whatsappPulse 2s ease infinite;
+}
+
+/* Hero parallax overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(17, 17, 17, 0.75) 0%,
+    rgba(17, 17, 17, 0.55) 60%,
+    rgba(17, 17, 17, 0.45) 100%
+  );
+}
+
+/* Gold shimmer text effect */
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #D4AF37 0%,
+    #F0D060 40%,
+    #D4AF37 60%,
+    #B8941E 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input focus ring */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #D4AF37 !important;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+/* Navbar active link underline */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #D4AF37;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
