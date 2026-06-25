@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { BookOpen, Monitor, Users, Clock, Star, ArrowRight, Award, CheckCircle } from 'lucide-react';
+import { BookOpen, Monitor, Users, Clock, Star, ArrowRight, Award, CircleCheck as CheckCircle } from 'lucide-react';
 
 const INSTRUCTOR_IMAGE = 'https://images.pexels.com/photos/3760607/pexels-photo-3760607.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop';
 
@@ -39,7 +39,7 @@ const courses = [
 const instructorCredentials = [
   '+10 años de experiencia en el rubro',
   'Especialista en instalaciones eléctricas y sanitarias',
-  'Más de 500 proyectos completados',
+  'Más de 400 proyectos completados',
   'Formación técnica certificada',
 ];
 

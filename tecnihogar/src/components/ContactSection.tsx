@@ -7,8 +7,8 @@ const WHATSAPP_MSG = encodeURIComponent('Hola TecniHogar! Me gustaría solicitar
 const contactInfo = [
   { icon: Phone, label: 'Teléfono', value: '+54 11 5564 0049', href: 'tel:+541155640049' },
   { icon: Mail, label: 'Email', value: 'info@mytecnihogar.com', href: 'mailto:info@mytecnihogar.com' },
-  { icon: Clock, label: 'Atención', value: 'Lun-Vie 8:00-18:00 / Sáb 8:00-13:00 · Urgencias 24/7', href: undefined },
-  { icon: MapPin, label: 'Zona de cobertura', value: 'Buenos Aires y Gran Buenos Aires', href: undefined },
+  { icon: Clock, label: 'Atención', value: 'Lun-Vie 8:00-18:00 / Sáb 8:00-13:00', href: undefined },
+  { icon: MapPin, label: 'Zona de cobertura', value: 'CABA y Gran Buenos Aires', href: undefined },
 ];
 
 type FormState = 'idle' | 'loading' | 'success' | 'error';

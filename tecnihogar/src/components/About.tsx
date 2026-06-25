@@ -11,7 +11,7 @@ const expertise = [
 const stats = [
   { icon: Award, value: '+10', label: 'Años de experiencia' },
   { icon: Users, value: '+200', label: 'Clientes satisfechos' },
-  { icon: Briefcase, value: '+500', label: 'Proyectos terminados' },
+  { icon: Briefcase, value: '+400', label: 'Proyectos terminados' },
 ];
 
 export default function About() {

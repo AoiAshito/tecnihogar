@@ -139,15 +139,13 @@ export default function Footer() {
                   <span className="text-white text-sm">Lun-Vie 8:00 - 18:00</span>
                   <br />
                   <span className="text-white text-sm">Sáb 8:00 - 13:00</span>
-                  <br />
-                  <span className="text-gold text-sm font-semibold">Urgencias 24/7</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-gold mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-text-dark-secondary text-xs mb-0.5">Zona de cobertura</div>
-                  <span className="text-white text-sm">Buenos Aires y Gran Buenos Aires</span>
+                  <span className="text-white text-sm">CABA y Gran Buenos Aires</span>
                 </div>
               </li>
             </ul>
