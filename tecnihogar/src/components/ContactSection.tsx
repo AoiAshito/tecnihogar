@@ -214,12 +214,11 @@ export default function ContactSection() {
                       <option value="">Seleccioná un servicio...</option>
                       <option>Electricidad Profesional</option>
                       <option>Plomería</option>
-                      <option>Riego Automático</option>
+                      <option>Gas</option>
                       <option>Climatización</option>
                       <option>Durlock y Yeso</option>
                       <option>Pintura</option>
                       <option>Impermeabilización de Terrazas</option>
-                      <option>Modernización del Hogar</option>
                       <option>Albañilería</option>
                       <option>Reparaciones en General</option>
                       <option>Plan de Mantenimiento Fijo</option>

@@ -1,11 +1,11 @@
 import { useRef, useEffect } from 'react';
-import { CheckCircle, Award, Users, Briefcase } from 'lucide-react';
+import { CircleCheck as CheckCircle, Award, Users, Briefcase } from 'lucide-react';
 
 const ABOUT_IMAGE = 'https://images.pexels.com/photos/3760607/pexels-photo-3760607.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&fit=crop';
 
 const expertise = [
-  'Electricidad', 'Plomería', 'Climatización', 'Durlock y Yeso',
-  'Riego Automático', 'Pintura', 'Impermeabilización', 'Albañilería',
+  'Electricidad', 'Plomería', 'Gas', 'Climatización', 'Durlock y Yeso',
+  'Pintura', 'Impermeabilización', 'Albañilería',
 ];
 
 const stats = [

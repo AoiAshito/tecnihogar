@@ -2,12 +2,11 @@ import { useRef, useEffect } from 'react';
 import {
   Zap,
   Droplets,
-  Sprout,
+  Flame,
   Wind,
   Layers,
   Paintbrush,
   Shield,
-  Home,
   Hammer,
   Wrench,
 } from 'lucide-react';
@@ -19,7 +18,7 @@ const services = [
     items: [
       'Instalaciones eléctricas completas',
       'Tableros y circuitos',
-      'Iluminación LED y domotica',
+      'Iluminación LED',
       'Reparación de averías urgentes',
     ],
   },
@@ -34,13 +33,12 @@ const services = [
     ],
   },
   {
-    icon: Sprout,
-    title: 'Riego Automático',
+    icon: Flame,
+    title: 'Gas',
     items: [
-      'Diseño y planificación de red',
-      'Instalación de aspersores',
-      'Programadores y sensores',
-      'Mantenimiento y ajuste estacional',
+      'Instalación y reparación',
+      'Termotanques',
+      'Calefones',
     ],
   },
   {
@@ -85,20 +83,9 @@ const services = [
     ],
   },
   {
-    icon: Home,
-    title: 'Modernización del Hogar',
-    items: [
-      'Actualización de instalaciones',
-      'Smart home y domótica básica',
-      'Reforma de baños y cocinas',
-      'Renovación de ambientes',
-    ],
-  },
-  {
     icon: Hammer,
     title: 'Albañilería',
     items: [
-      'Construcción y ampliaciones',
       'Reparación de estructuras',
       'Revestimientos y pisos',
       'Contrapisos y fundaciones',

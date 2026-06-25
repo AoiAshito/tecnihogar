@@ -3,12 +3,11 @@ import { Phone, Mail, MapPin, Clock, Drama as Instagram, Notebook as Facebook } 
 const services = [
   'Electricidad Profesional',
   'Plomería',
-  'Riego Automático',
+  'Gas',
   'Climatización',
   'Durlock y Yeso',
   'Pintura',
   'Impermeabilización',
-  'Modernización del Hogar',
   'Albañilería',
   'Reparaciones en General',
 ];
