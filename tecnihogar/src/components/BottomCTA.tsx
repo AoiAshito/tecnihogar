@@ -56,7 +56,7 @@ export default function BottomCTA() {
             <ArrowRight size={16} />
           </button>
           <a
-            href="https://wa.me/5491100000000?text=Hola%20TecniHogar!%20Quiero%20solicitar%20un%20presupuesto."
+            href="https://wa.me/541155640049?text=Hola%20TecniHogar!%20Quiero%20solicitar%20un%20presupuesto."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-heading font-semibold uppercase tracking-widest text-sm px-8 py-4 rounded hover:bg-[#1ebe5c] hover:shadow-xl transition-all duration-300"

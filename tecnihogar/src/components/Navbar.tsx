@@ -82,7 +82,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <a
-          href="tel:+5491100000000"
+          href="tel:+541155640049"
           className="hidden md:flex items-center gap-2 btn-primary text-xs py-3 px-6"
         >
           <Phone size={15} />
@@ -117,7 +117,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="tel:+5491100000000"
+            href="tel:+541155640049"
             className="btn-primary text-center mt-4 text-xs"
           >
             Llamanos

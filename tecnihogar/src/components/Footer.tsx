@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Drama as Instagram, Notebook as Facebook } from 'lucide-react';
 
 const services = [
   'Electricidad Profesional',
@@ -44,14 +44,18 @@ export default function Footer() {
             {/* Social */}
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/mytecnihogar"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 border border-white/10 hover:border-gold/40 flex items-center justify-center text-white/60 hover:text-gold transition-all duration-200"
               >
                 <Instagram size={16} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/mytecnihogar"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 border border-white/10 hover:border-gold/40 flex items-center justify-center text-white/60 hover:text-gold transition-all duration-200"
               >
@@ -115,8 +119,8 @@ export default function Footer() {
                 <Phone size={16} className="text-gold mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-text-dark-secondary text-xs mb-0.5">Teléfono</div>
-                  <a href="tel:+5491100000000" className="text-white text-sm hover:text-gold transition-colors duration-200">
-                    +54 9 11 0000-0000
+                  <a href="tel:+541155640049" className="text-white text-sm hover:text-gold transition-colors duration-200">
+                    +54 11 5564 0049
                   </a>
                 </div>
               </li>
@@ -124,8 +128,8 @@ export default function Footer() {
                 <Mail size={16} className="text-gold mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-text-dark-secondary text-xs mb-0.5">Email</div>
-                  <a href="mailto:contacto@tecnihogar.com.ar" className="text-white text-sm hover:text-gold transition-colors duration-200 break-all">
-                    contacto@tecnihogar.com.ar
+                  <a href="mailto:info@mytecnihogar.com" className="text-white text-sm hover:text-gold transition-colors duration-200 break-all">
+                    info@mytecnihogar.com
                   </a>
                 </div>
               </li>
@@ -133,7 +137,9 @@ export default function Footer() {
                 <Clock size={16} className="text-gold mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-text-dark-secondary text-xs mb-0.5">Horario</div>
-                  <span className="text-white text-sm">Lun–Sáb 8:00–20:00</span>
+                  <span className="text-white text-sm">Lun-Vie 8:00 - 18:00</span>
+                  <br />
+                  <span className="text-white text-sm">Sáb 8:00 - 13:00</span>
                   <br />
                   <span className="text-gold text-sm font-semibold">Urgencias 24/7</span>
                 </div>

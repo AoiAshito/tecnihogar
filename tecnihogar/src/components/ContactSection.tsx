@@ -1,13 +1,13 @@
 import { useRef, useEffect, useState } from 'react';
-import { Phone, Mail, Clock, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, Send, CircleCheck as CheckCircle } from 'lucide-react';
 
-const WHATSAPP_NUMBER = '5491100000000';
+const WHATSAPP_NUMBER = '541155640049';
 const WHATSAPP_MSG = encodeURIComponent('Hola TecniHogar! Me gustaría solicitar un presupuesto.');
 
 const contactInfo = [
-  { icon: Phone, label: 'Teléfono', value: '+54 9 11 0000-0000', href: 'tel:+5491100000000' },
-  { icon: Mail, label: 'Email', value: 'contacto@tecnihogar.com.ar', href: 'mailto:contacto@tecnihogar.com.ar' },
-  { icon: Clock, label: 'Atención', value: 'Lun–Sáb 8:00–20:00 · Urgencias 24/7', href: undefined },
+  { icon: Phone, label: 'Teléfono', value: '+54 11 5564 0049', href: 'tel:+541155640049' },
+  { icon: Mail, label: 'Email', value: 'info@mytecnihogar.com', href: 'mailto:info@mytecnihogar.com' },
+  { icon: Clock, label: 'Atención', value: 'Lun-Vie 8:00-18:00 / Sáb 8:00-13:00 · Urgencias 24/7', href: undefined },
   { icon: MapPin, label: 'Zona de cobertura', value: 'Buenos Aires y Gran Buenos Aires', href: undefined },
 ];
 

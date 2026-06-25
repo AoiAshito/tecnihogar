@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
-const WHATSAPP_NUMBER = '5491100000000';
+const WHATSAPP_NUMBER = '541155640049';
 const WHATSAPP_MSG = encodeURIComponent('Hola TecniHogar! Me gustaría consultar sobre sus servicios.');
 
 export default function WhatsAppButton() {
