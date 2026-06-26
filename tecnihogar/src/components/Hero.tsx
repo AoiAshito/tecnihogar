@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-const HERO_IMAGE = 'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop';
+const HERO_IMAGE = '/img/hero.jpg';
 
 export default function Hero() {
   const [visible, setVisible] = useState(false);

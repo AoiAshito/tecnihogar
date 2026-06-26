@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { CircleCheck as CheckCircle, Award, Users, Briefcase } from 'lucide-react';
 
-const ABOUT_IMAGE = 'https://images.pexels.com/photos/3760607/pexels-photo-3760607.jpeg?auto=compress&cs=tinysrgb&w=800&h=900&fit=crop';
+const ABOUT_IMAGE = '/img/about.jpg';
 
 const expertise = [
   'Electricidad', 'Plomería', 'Gas', 'Climatización', 'Durlock y Yeso',
